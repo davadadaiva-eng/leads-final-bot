@@ -5,7 +5,7 @@ YELP_API_KEY = os.getenv("YELP_API_KEY")
 DISCORD_WEBHOOK_URL = os.getenv("DISCORD_WEBHOOK_URL")
 # Get locations from Secrets, or use these 3 defaults
 LOCATIONS = [l.strip() for l in os.getenv("TARGET_LOCATIONS", "Austin TX, Miami FL, Dallas TX").split(",")]
-CATEGORIES = ["landscaping", "hvac", "plumbing", "roofing"]
+CATEGORIES = ["landscaping", "hvac", "plumbing", "roofing", "paysagiste", "climatisation", "plombier", "couvreur"]
 PROCESSED_LEADS_FILE = "sent_leads.txt"
 def send_to_discord(biz):
     payload = {
